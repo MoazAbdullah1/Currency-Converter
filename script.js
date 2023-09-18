@@ -7,6 +7,7 @@ function convertCurrency() {
     const apiUrl = `https://api.exchangeratesapi.io/latest?base=${fromCurrency}&symbols=${toCurrency}`;
   
     fetch(apiUrl)
+    
       .then(response => response.json())
       .then(data => {
         const exchangeRate = data.rates[toCurrency];
