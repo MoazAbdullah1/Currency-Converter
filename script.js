@@ -1,4 +1,5 @@
 function convertCurrency() {
+  
     const amount = parseFloat(document.getElementById('amount').value);
     const fromCurrency = document.getElementById('from').value;
     const toCurrency = document.getElementById('to').value;
